@@ -215,6 +215,19 @@
         "runtime": {
           "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll": {}
         }
+      },
+      "BlogApp.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "3.1.3"
+        },
+        "compile": {
+          "bin/placeholder/BlogApp.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BlogApp.Data.dll": {}
+        }
       }
     }
   },
@@ -624,10 +637,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "BlogApp.Data/1.0.0": {
+      "type": "project",
+      "path": "../BlogApp.Data/BlogApp.Data.csproj",
+      "msbuildProject": "../BlogApp.Data/BlogApp.Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "BlogApp.Data >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 3.1.3"
     ]
   },
@@ -639,11 +658,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projeler\\Calisma\\BlogApp\\BlogApp.Data\\BlogApp.Data.csproj",
-      "projectName": "BlogApp.Data",
-      "projectPath": "D:\\Projeler\\Calisma\\BlogApp\\BlogApp.Data\\BlogApp.Data.csproj",
+      "projectUniqueName": "D:\\Projeler\\Calisma\\BlogApp\\BlogApp.Business\\BlogApp.Business.csproj",
+      "projectName": "BlogApp.Business",
+      "projectPath": "D:\\Projeler\\Calisma\\BlogApp\\BlogApp.Business\\BlogApp.Business.csproj",
       "packagesPath": "C:\\Users\\Omer\\.nuget\\packages\\",
-      "outputPath": "D:\\Projeler\\Calisma\\BlogApp\\BlogApp.Data\\obj\\",
+      "outputPath": "D:\\Projeler\\Calisma\\BlogApp\\BlogApp.Business\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -663,7 +682,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Projeler\\Calisma\\BlogApp\\BlogApp.Data\\BlogApp.Data.csproj": {
+              "projectPath": "D:\\Projeler\\Calisma\\BlogApp\\BlogApp.Data\\BlogApp.Data.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
