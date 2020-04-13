@@ -1,0 +1,14 @@
+D:\Projeler\Calisma\BlogApp\BlogApp.Root\obj\Debug\netcoreapp3.1\BlogApp.Root.csprojAssemblyReference.cache
+D:\Projeler\Calisma\BlogApp\BlogApp.Root\obj\Debug\netcoreapp3.1\BlogApp.Root.csproj.CoreCompileInputs.cache
+D:\Projeler\Calisma\BlogApp\BlogApp.Root\obj\Debug\netcoreapp3.1\BlogApp.Root.AssemblyInfoInputs.cache
+D:\Projeler\Calisma\BlogApp\BlogApp.Root\obj\Debug\netcoreapp3.1\BlogApp.Root.AssemblyInfo.cs
+D:\Projeler\Calisma\BlogApp\BlogApp.Root\bin\Debug\netcoreapp3.1\BlogApp.Root.deps.json
+D:\Projeler\Calisma\BlogApp\BlogApp.Root\bin\Debug\netcoreapp3.1\BlogApp.Root.dll
+D:\Projeler\Calisma\BlogApp\BlogApp.Root\bin\Debug\netcoreapp3.1\BlogApp.Root.pdb
+D:\Projeler\Calisma\BlogApp\BlogApp.Root\bin\Debug\netcoreapp3.1\BlogApp.Business.dll
+D:\Projeler\Calisma\BlogApp\BlogApp.Root\bin\Debug\netcoreapp3.1\BlogApp.Data.dll
+D:\Projeler\Calisma\BlogApp\BlogApp.Root\bin\Debug\netcoreapp3.1\BlogApp.Data.pdb
+D:\Projeler\Calisma\BlogApp\BlogApp.Root\bin\Debug\netcoreapp3.1\BlogApp.Business.pdb
+D:\Projeler\Calisma\BlogApp\BlogApp.Root\obj\Debug\netcoreapp3.1\BlogApp.Root.csproj.CopyComplete
+D:\Projeler\Calisma\BlogApp\BlogApp.Root\obj\Debug\netcoreapp3.1\BlogApp.Root.dll
+D:\Projeler\Calisma\BlogApp\BlogApp.Root\obj\Debug\netcoreapp3.1\BlogApp.Root.pdb
