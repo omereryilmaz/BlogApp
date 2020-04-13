@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using BlogApp.Root;
 
 namespace BlogApp.WebUI
 {
@@ -14,6 +15,7 @@ namespace BlogApp.WebUI
     {
         public void ConfigureServices(IServiceCollection services)
         {
+            CompositionRoot.InjectDependencies(services);
             services.AddControllersWithViews();
         }
 
