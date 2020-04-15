@@ -2,6 +2,7 @@ namespace BlogApp.Business.Repositories
 {
     using System;
     using System.Collections.Generic;
+    using System.Linq.Expressions;
     using BlogApp.Data.Models;
     public interface IRepository<T> where T : CoreEntity
     {
@@ -10,5 +11,7 @@ namespace BlogApp.Business.Repositories
          void Delete(Guid Id);
          T GetById(Guid Id);
          IEnumerable<T> GetAll();
+         int Save();
+         bool Any(Expression<Func<T, bool>> exp);
     }
 }

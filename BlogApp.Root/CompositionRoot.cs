@@ -19,7 +19,7 @@ namespace BlogApp.Root
         
             services.AddDbContext<BlogContext>(options => options.UseSqlServer(
                 @"Server=.\SQLExpress;Database=BlogDB;Integrated Security=true;",
-                x => x.MigrationsAssembly("BlogApp.Data")));             
+                x => x.MigrationsAssembly("BlogApp.WebUI")));             
         }
     }
 }

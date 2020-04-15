@@ -2,6 +2,15 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BlogApp.Root\BlogApp.Root.csproj" />
+    <ProjectReference Include="..\BlogApp.Business\BlogApp.Business.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.3">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.2" />
   </ItemGroup>
 
   <PropertyGroup>

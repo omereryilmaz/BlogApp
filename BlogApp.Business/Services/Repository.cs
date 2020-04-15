@@ -8,6 +8,7 @@ namespace BlogApp.Business.Services
     using Microsoft.EntityFrameworkCore;
     using System.Threading.Tasks;
     using System.Linq;
+    using System.Linq.Expressions;
 
     public class Repository<T> : IRepository<T> where T : CoreEntity
     {
@@ -27,6 +28,7 @@ namespace BlogApp.Business.Services
         public void Update(T entity)
         {
             if(entity == null) throw new ArgumentNullException("entity");
+            _context.Entry(entity).State = EntityState.Modified;
             _context.SaveChanges();            
         }
         public void Delete(Guid Id)
@@ -44,6 +46,16 @@ namespace BlogApp.Business.Services
         public IEnumerable<T> GetAll()
         {
             return _entities.AsEnumerable();    
+        }
+
+        public int Save()
+        {
+            return _context.SaveChanges();
+        }
+
+        public bool Any(Expression<Func<T, bool>> exp)
+        {
+            return _entities.Any(exp);
         }
     }
 }
