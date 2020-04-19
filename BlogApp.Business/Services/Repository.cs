@@ -57,5 +57,10 @@ namespace BlogApp.Business.Services
         {
             return _entities.Any(exp);
         }
+
+        public IEnumerable<T> GetDefault(Expression<Func<T, bool>> exp)
+        {
+            return _entities.Where(exp);
+        }
     }
 }

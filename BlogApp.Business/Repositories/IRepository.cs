@@ -13,5 +13,6 @@ namespace BlogApp.Business.Repositories
          IEnumerable<T> GetAll();
          int Save();
          bool Any(Expression<Func<T, bool>> exp);
+         IEnumerable<T> GetDefault(Expression<Func<T, bool>> exp);
     }
 }

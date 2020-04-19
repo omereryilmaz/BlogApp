@@ -15,9 +15,7 @@ namespace BlogApp.Data.Models
         [DataType(DataType.Date)]
         public DateTime CreatedDate { get; set; }
         public string FullName { get; set; }
-
-        public Guid CategoryId { get; set; }
-        public virtual Category Category { get; set; }
+        public virtual ICollection<PostCategory> PostCategories { get; set; }
         public virtual ICollection<PostImage> PostImages { get; set; }
     }
 }

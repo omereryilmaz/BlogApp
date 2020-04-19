@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BlogApp.WebUI.Migrations
 {
     [DbContext(typeof(BlogContext))]
-    [Migration("20200415161508_initialize")]
-    partial class initialize
+    [Migration("20200418165254_edit")]
+    partial class edit
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -43,9 +43,6 @@ namespace BlogApp.WebUI.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("CategoryId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<string>("Content")
                         .HasColumnType("nvarchar(max)");
 
@@ -62,9 +59,22 @@ namespace BlogApp.WebUI.Migrations
 
                     b.HasKey("Id");
 
+                    b.ToTable("Posts");
+                });
+
+            modelBuilder.Entity("BlogApp.Data.Models.PostCategory", b =>
+                {
+                    b.Property<Guid>("PostId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("CategoryId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("PostId", "CategoryId");
+
                     b.HasIndex("CategoryId");
 
-                    b.ToTable("Posts");
+                    b.ToTable("PostCategory");
                 });
 
             modelBuilder.Entity("BlogApp.Data.Models.PostImage", b =>
@@ -89,11 +99,17 @@ namespace BlogApp.WebUI.Migrations
                     b.ToTable("PostImages");
                 });
 
-            modelBuilder.Entity("BlogApp.Data.Models.Post", b =>
+            modelBuilder.Entity("BlogApp.Data.Models.PostCategory", b =>
                 {
                     b.HasOne("BlogApp.Data.Models.Category", "Category")
-                        .WithMany("Posts")
+                        .WithMany("PostCategories")
                         .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BlogApp.Data.Models.Post", "Post")
+                        .WithMany("PostCategories")
+                        .HasForeignKey("PostId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

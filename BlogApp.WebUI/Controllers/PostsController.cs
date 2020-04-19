@@ -25,7 +25,8 @@ namespace BlogApp.WebUI.Controllers
         // GET: Posts
         public IActionResult Index()
         {
-            var posts = _postRepository.GetAll().AsQueryable().Include(p=>p.Category);
+            var posts = _postRepository.GetAll().AsQueryable().Include(x => x.PostCategories)
+            .ThenInclude(c => c.Category).ToList();
             return View(posts);
         }
 
@@ -58,15 +59,20 @@ namespace BlogApp.WebUI.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create([Bind("Title,Content,CreatedDate,FullName,CategoryId,Id")] Post post)
+        public IActionResult Create([Bind("Title,Content,CreatedDate,FullName,Id")] Post post, Guid[] PostCategories)
         {
             if (ModelState.IsValid)
             {
+                post.PostCategories = new List<PostCategory>();
+                foreach(var item in PostCategories)
+                {
+                    post.PostCategories.Add(new PostCategory{CategoryId = item});
+                }
                 _postRepository.Add(post);
                 _postRepository.Save();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CategoryId"] = new SelectList(_categoryRepository.GetAll(), "Id", "Name", post.CategoryId);
+            ViewData["CategoryId"] = new SelectList(_categoryRepository.GetAll(), "Id", "Name");
             return View(post);
         }
 
@@ -78,13 +84,18 @@ namespace BlogApp.WebUI.Controllers
                 return NotFound();
             }
 
-            var post = _postRepository.GetById(id.Value);
+            var post = _postRepository.GetDefault(p => p.Id == id.Value)
+                .AsQueryable()
+                .Include(c => c.PostCategories)
+                .ThenInclude(c => c.Category);
+
             if (post == null)
             {
                 return NotFound();
             }
-            ViewData["CategoryId"] = new SelectList(_categoryRepository.GetAll(), "Id", "Name", post.CategoryId);
-            return View(post);
+            ViewData["CategoryId"] = new SelectList(_categoryRepository.GetAll(), "Id", "Name");
+            ViewBag.CategoryIds = post.Select(c => c.PostCategories.Select(x => x.Category.Id)).ToArray();
+            return View(post.First());
         }
 
         // POST: Posts/Edit/5
@@ -92,7 +103,7 @@ namespace BlogApp.WebUI.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(Guid id, [Bind("Title,Content,CreatedDate,FullName,CategoryId,Id")] Post post)
+        public IActionResult Edit(Guid id, [Bind("Title,Content,CreatedDate,FullName,Id")] Post post, Guid[] PostCategories)
         {
             if (id != post.Id)
             {
@@ -103,7 +114,23 @@ namespace BlogApp.WebUI.Controllers
             {
                 try
                 {
-                    _postRepository.Update(post);
+                     var ps = _postRepository.GetDefault(p => p.Id == id)
+                        .AsQueryable()
+                        .Include(c => c.PostCategories)
+                        .ThenInclude(c => c.Category).First();
+                    
+                    ps.Title = post.Title;
+                    ps.CreatedDate = post.CreatedDate;
+                    ps.FullName = post.FullName;
+                    ps.Content = post.Content;
+
+                    ps.PostCategories.Clear();
+                    foreach(var item in PostCategories)
+                    {
+                        ps.PostCategories.Add(new PostCategory{CategoryId = item});
+                    }
+
+                    _postRepository.Update(ps);
                     _postRepository.Save();
                 }
                 catch (DbUpdateConcurrencyException)
@@ -119,7 +146,7 @@ namespace BlogApp.WebUI.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CategoryId"] = new SelectList(_categoryRepository.GetAll(), "Id", "Name", post.CategoryId);
+            ViewData["CategoryId"] = new SelectList(_categoryRepository.GetAll(), "Id", "Name");
             return View(post);
         }
 

@@ -23,7 +23,7 @@
                 @Html.DisplayNameFor(model => model.FullName)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Category)
+                @Html.DisplayNameFor(model => model.PostCategories)
             </th>
             <th></th>
         </tr>
@@ -44,7 +44,7 @@
                 @Html.DisplayFor(modelItem => item.FullName)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Category.Name)
+                @string.Join(" / ", @item.PostCategories.Select(x => x.Category.Name)) 
             </td>
             <td>
                  <a class="btn btn-sm btn-outline-warning" asp-action="Edit" asp-route-id="@item.Id">
