@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using BlogApp.Root;
+using BlogApp.WebUI.Utility;
 
 namespace BlogApp.WebUI
 {
@@ -17,6 +18,7 @@ namespace BlogApp.WebUI
         {
             CompositionRoot.InjectDependencies(services);
             services.AddControllersWithViews();
+            services.AddTransient<IFileUpload, FileSystemFileUploader>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

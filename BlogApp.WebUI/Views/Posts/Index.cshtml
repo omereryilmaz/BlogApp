@@ -47,6 +47,9 @@
                 @string.Join(" / ", @item.PostCategories.Select(x => x.Category.Name)) 
             </td>
             <td>
+                <a class="btn btn-sm btn-outline-dark" asp-action="Upload" asp-controller="PostImages" asp-route-id="@item.Id">
+                    <i class="fas fa-image"></i>
+                </a>
                  <a class="btn btn-sm btn-outline-warning" asp-action="Edit" asp-route-id="@item.Id">
                     <i class="fas fa-pencil-alt"></i>
                 </a>

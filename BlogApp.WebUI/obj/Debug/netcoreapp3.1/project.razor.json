@@ -20546,6 +20546,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Projeler\\Calisma\\BlogApp\\BlogApp.WebUI\\Views\\PostImages\\Upload.cshtml",
+      "TargetPath": "Views\\PostImages\\Upload.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Projeler\\Calisma\\BlogApp\\BlogApp.WebUI\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
