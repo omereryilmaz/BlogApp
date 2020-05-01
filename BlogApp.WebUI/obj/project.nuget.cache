@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yDVHDOBpHZbAeJoFwqv32FJ3omK1A9a/1dgHIPqFBAdM65Lfyfc2zDgjCESL8jPdJc+29QAPzR4N3bHk2gWzCg==",
+  "dgSpecHash": "9T1kr2fEaP0fVVPiFbR6q3KFYeYrZRVGdRT3QDyC3pv/Tgba/ysmCMdT4dEqve1iOFjYTvcgFWs2DHi9aMZ/rg==",
   "success": true,
-  "projectFilePath": "d:\\Projeler\\Calisma\\BlogApp\\BlogApp.WebUI\\BlogApp.WebUI.csproj",
+  "projectFilePath": "D:\\Projeler\\Calisma\\BlogApp\\BlogApp.WebUI\\BlogApp.WebUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Omer\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Omer\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
