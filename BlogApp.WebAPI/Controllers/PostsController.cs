@@ -34,11 +34,11 @@ namespace BlogApp.WebAPI.Controllers
                     p.Post.CreatedDate,
                     p.Post.FullName,
                     img = p.Post.PostImages.Where(i => i.Active == true)
-                    .Select(i => $"http://localhost:5000{i.ImageUrl}")
+                    .Select(i => $"http://10.0.2.2:5000{i.ImageUrl}")
                     .First() ?? ""
                 })
             });
-            return posts;
+            return posts.First();
         } 
     }
 }
