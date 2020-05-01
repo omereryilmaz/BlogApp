@@ -16,6 +16,31 @@
 	
 **Web API:** Bilgilerin servis olarak dışarıya sunulacağı katmandır.
 	
+
 ### Proje Geliştirme Ortamı
 Visual Studio Code
+
+
+### WebUI
+**Tasarım:** [SB Admin](https://startbootstrap.com/templates/sb-admin/).
+
+**Kategori kontrol paneli:**
+![WebUI-Kategori](https://github.com/omereryilmaz/BlogApp/blob/master/readme_img/webui_1.png)
+
+**Post kontrol paneli:** 
+Çoklu kategori seçimi
+![WebUI-Kategori](https://github.com/omereryilmaz/BlogApp/blob/master/readme_img/webui_2.png)
+
+Sürükle bırak çoklu resim yükleme
+![WebUI-Kategori](https://github.com/omereryilmaz/BlogApp/blob/master/readme_img/webui_3.png)
+
+
+### WebAPI
+![WebUI-Kategori](https://github.com/omereryilmaz/BlogApp/blob/master/readme_img/webapi_1.png)
+
+![WebUI-Kategori](https://github.com/omereryilmaz/BlogApp/blob/master/readme_img/webapi_2.png)
+
+
+
+
 
