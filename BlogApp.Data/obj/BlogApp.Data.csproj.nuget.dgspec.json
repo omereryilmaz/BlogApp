@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projeler\\Calisma\\BlogApp\\BlogApp.Data\\BlogApp.Data.csproj": {}
+    "d:\\Projeler\\Calisma\\BlogApp\\BlogApp.Data\\BlogApp.Data.csproj": {}
   },
   "projects": {
-    "D:\\Projeler\\Calisma\\BlogApp\\BlogApp.Data\\BlogApp.Data.csproj": {
+    "d:\\Projeler\\Calisma\\BlogApp\\BlogApp.Data\\BlogApp.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projeler\\Calisma\\BlogApp\\BlogApp.Data\\BlogApp.Data.csproj",
+        "projectUniqueName": "d:\\Projeler\\Calisma\\BlogApp\\BlogApp.Data\\BlogApp.Data.csproj",
         "projectName": "BlogApp.Data",
-        "projectPath": "D:\\Projeler\\Calisma\\BlogApp\\BlogApp.Data\\BlogApp.Data.csproj",
+        "projectPath": "d:\\Projeler\\Calisma\\BlogApp\\BlogApp.Data\\BlogApp.Data.csproj",
         "packagesPath": "C:\\Users\\Omer\\.nuget\\packages\\",
-        "outputPath": "D:\\Projeler\\Calisma\\BlogApp\\BlogApp.Data\\obj\\",
+        "outputPath": "d:\\Projeler\\Calisma\\BlogApp\\BlogApp.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

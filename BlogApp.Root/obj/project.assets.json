@@ -4928,11 +4928,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projeler\\Calisma\\BlogApp\\BlogApp.Root\\BlogApp.Root.csproj",
+      "projectUniqueName": "d:\\Projeler\\Calisma\\BlogApp\\BlogApp.Root\\BlogApp.Root.csproj",
       "projectName": "BlogApp.Root",
-      "projectPath": "D:\\Projeler\\Calisma\\BlogApp\\BlogApp.Root\\BlogApp.Root.csproj",
+      "projectPath": "d:\\Projeler\\Calisma\\BlogApp\\BlogApp.Root\\BlogApp.Root.csproj",
       "packagesPath": "C:\\Users\\Omer\\.nuget\\packages\\",
-      "outputPath": "D:\\Projeler\\Calisma\\BlogApp\\BlogApp.Root\\obj\\",
+      "outputPath": "d:\\Projeler\\Calisma\\BlogApp\\BlogApp.Root\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -4953,11 +4953,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\Projeler\\Calisma\\BlogApp\\BlogApp.Business\\BlogApp.Business.csproj": {
-              "projectPath": "D:\\Projeler\\Calisma\\BlogApp\\BlogApp.Business\\BlogApp.Business.csproj"
+            "d:\\Projeler\\Calisma\\BlogApp\\BlogApp.Business\\BlogApp.Business.csproj": {
+              "projectPath": "d:\\Projeler\\Calisma\\BlogApp\\BlogApp.Business\\BlogApp.Business.csproj"
             },
-            "D:\\Projeler\\Calisma\\BlogApp\\BlogApp.Data\\BlogApp.Data.csproj": {
-              "projectPath": "D:\\Projeler\\Calisma\\BlogApp\\BlogApp.Data\\BlogApp.Data.csproj"
+            "d:\\Projeler\\Calisma\\BlogApp\\BlogApp.Data\\BlogApp.Data.csproj": {
+              "projectPath": "d:\\Projeler\\Calisma\\BlogApp\\BlogApp.Data\\BlogApp.Data.csproj"
             }
           }
         }

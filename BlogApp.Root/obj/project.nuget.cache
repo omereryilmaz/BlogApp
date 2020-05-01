@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pZrwHNDec9jVjFWOIfYFSGYF4ztBM1oirL16jWElB7WaM47blpJ6WQtS9NlmOI531O8oKvDVeQ+we3JhM6TDOw==",
+  "dgSpecHash": "FT+XNcccJgol+redCZQrmdAhgtb5Vnc6MCPbMfCQq8eiYJPOzd6ZzrdfNXjG2Ovqiq0nKyvFQEHUUWnW/k8woA==",
   "success": true,
-  "projectFilePath": "D:\\Projeler\\Calisma\\BlogApp\\BlogApp.Root\\BlogApp.Root.csproj",
+  "projectFilePath": "d:\\Projeler\\Calisma\\BlogApp\\BlogApp.Root\\BlogApp.Root.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Omer\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
     "C:\\Users\\Omer\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
