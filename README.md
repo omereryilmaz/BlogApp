@@ -1,7 +1,7 @@
 # BlogApp
 ## N-Tier Architecture in ASP.NET Core MVC &amp; React Native
 
-`Bilge Adam Teknoloji` tarafından `Murat Vuranok` eğitmenliğinde gerçekleştirilen 5 günlük `.Net Core ile Uygulama Geliştirme` baslikli eğitim süresince oluşturulmuştur.
+Bu proje, `Bilge Adam Teknoloji` tarafından `Murat Vuranok` eğitmenliğinde gerçekleştirilen 5 günlük `.Net Core ile Uygulama Geliştirme` başlıklı eğitim süresince oluşturulmuştur.
 
 ### Proje Yapısı
 ![Katmanlı Mimari](https://github.com/omereryilmaz/BlogApp/blob/master/readme_img/blogapp_katman.png)
