@@ -4,7 +4,7 @@
 `Bilge Adam Teknoloji` tarafından `Murat Vuranok` eğitmenliğinde gerçekleştirilen 5 günlük `.Net Core ile Uygulama Geliştirme` baslikli eğitim süresince oluşturulmuştur.
 
 ### Proje Yapısı
-![Katmanlı Mimari](https://github.com/omereryilmaz/Algorithms/blob/master/LongestCommonSubsequences/img/1.jpg)
+![Katmanlı Mimari](https://github.com/omereryilmaz/BlogApp/blob/master/readme_img/blogapp_katman.png)
 
 **Data Access Layer:** Veri katmanına erişim sağlayacak. İçerisinde modeller ve veritabanıyla haberleşilen context yapısı yer aldığı katmandır.
 
