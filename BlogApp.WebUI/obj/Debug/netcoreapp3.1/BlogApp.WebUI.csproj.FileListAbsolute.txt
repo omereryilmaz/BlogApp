@@ -154,3 +154,4 @@ D:\Projeler\Calisma\BlogApp\BlogApp.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\Po
 D:\Projeler\Calisma\BlogApp\BlogApp.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\Posts\Edit.cshtml.g.cs
 D:\Projeler\Calisma\BlogApp\BlogApp.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\Posts\Index.cshtml.g.cs
 D:\Projeler\Calisma\BlogApp\BlogApp.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\PostImages\Upload.cshtml.g.cs
+D:\Projeler\Calisma\BlogApp\BlogApp.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\PostImages\Index.cshtml.g.cs

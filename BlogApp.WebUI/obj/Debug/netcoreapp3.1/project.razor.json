@@ -20566,6 +20566,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Projeler\\Calisma\\BlogApp\\BlogApp.WebUI\\Views\\PostImages\\Index.cshtml",
+      "TargetPath": "Views\\PostImages\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Projeler\\Calisma\\BlogApp\\BlogApp.WebUI\\Views\\Categories\\Create.cshtml",
       "TargetPath": "Views\\Categories\\Create.cshtml",
       "FileKind": "mvc"

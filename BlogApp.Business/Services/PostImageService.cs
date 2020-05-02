@@ -3,14 +3,19 @@ namespace BlogApp.Business.Services
     using Data.Context;
     using Data.Models;
     using Repositories;
-    using System;
-    public class PostImageService :Repository<PostImage>, IPostImageRepository
+    using System.Collections.Generic;
+    
+    public class PostImageService : Repository<PostImage>, IPostImageRepository
     {
         public PostImageService(BlogContext context):base(context){ }
 
-        public void SetFalse(Guid Id)
+        public void SetFalse(IEnumerable<PostImage> images)
         {
-            throw new NotImplementedException();
+            foreach (PostImage image in images)
+            {
+                image.Active = false;
+            }
+            Save();
         }
     }
 }
