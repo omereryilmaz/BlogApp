@@ -1,9 +1,0 @@
-D:\Projeler\Calisma\BlogApp\BlogApp.Data\bin\Debug\netcoreapp3.1\BlogApp.Data.deps.json
-D:\Projeler\Calisma\BlogApp\BlogApp.Data\bin\Debug\netcoreapp3.1\BlogApp.Data.dll
-D:\Projeler\Calisma\BlogApp\BlogApp.Data\bin\Debug\netcoreapp3.1\BlogApp.Data.pdb
-D:\Projeler\Calisma\BlogApp\BlogApp.Data\obj\Debug\netcoreapp3.1\BlogApp.Data.csprojAssemblyReference.cache
-D:\Projeler\Calisma\BlogApp\BlogApp.Data\obj\Debug\netcoreapp3.1\BlogApp.Data.csproj.CoreCompileInputs.cache
-D:\Projeler\Calisma\BlogApp\BlogApp.Data\obj\Debug\netcoreapp3.1\BlogApp.Data.AssemblyInfoInputs.cache
-D:\Projeler\Calisma\BlogApp\BlogApp.Data\obj\Debug\netcoreapp3.1\BlogApp.Data.AssemblyInfo.cs
-D:\Projeler\Calisma\BlogApp\BlogApp.Data\obj\Debug\netcoreapp3.1\BlogApp.Data.dll
-D:\Projeler\Calisma\BlogApp\BlogApp.Data\obj\Debug\netcoreapp3.1\BlogApp.Data.pdb
